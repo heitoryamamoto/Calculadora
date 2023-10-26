@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body {
     background-color: #EEEFEA;
 }
@@ -108,7 +110,7 @@ button{
     color: black;
     text-decoration: none;
     margin: 10px;
-    cursor: pointer     ;
+    cursor: pointer;
 }
 .barra a:active{
     box-shadow: 5px 5px 10px #acacac inset, -5px -5px 10px white inset;
@@ -128,9 +130,7 @@ button{
     height: 600px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.foto{
 
-}
 .foto img{
     border-radius: 50%;
     width: 200px;
@@ -173,19 +173,21 @@ button{
 }
 .over{
     position: absolute;
-    font-weight: 600;
+    font-weight: 540;
     font-size: 49px;
     margin-top: -309px;
     margin-right: 180px;
     color: #7e621b;
+    font-family: 'Roboto', sans-serif;
 }
 .posicao{
     position: absolute;
-    font-weight: 600;
+    font-weight: 500;
     font-size: x-large;
     margin-top: -240px;
     margin-right: 180px;
     color: #7e621b;
+    font-family: 'Ubuntu', sans-serif;
 }
 .bandeira{
     position: absolute;
@@ -209,9 +211,38 @@ button{
 }
 .nomeIcon{
     position: absolute;
-    font-weight: 600;
-    font-size: x-large;
-    margin-top: 110px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 100px;
     margin-right: 0px;
     color: #7e621b;
+    font-family: 'Ubuntu', sans-serif;
+}
+.barraIcon{
+    display: flex;
+    margin: auto;
+    margin-top: -120px;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    box-shadow: 8px 8px 20px #acacac, -5px -5px 10px white;
+    border-radius: 30px;
+}
+.barraIcon a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #acacac, -5px -5px 10px white;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.barraIcon a:active{
+    box-shadow: 5px 5px 10px #acacac inset, -5px -5px 10px white inset;
+}
+.barbarraIconra a:hover{
+    box-shadow: 5px 5px 10px #acacac inset, -5px -5px 10px white inset;
 }
