@@ -157,3 +157,10 @@ button{
 .clube img{
     width: 230px;
 }
+.icone{
+    position: absolute;
+}
+.fotoIcone{
+    position: relative;
+    margin-top: -180px;
+}
