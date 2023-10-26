@@ -1,0 +1,159 @@
+body {
+    background-color: #EEEFEA;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.calculadora {
+    margin-top: 100px;
+    background-color: #373735;
+    border-radius: 20px;
+    width: 440px;
+    height: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tela {
+    width: 410px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #1ebbd7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEFEA;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+.painel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.botaoVerde{
+    background-color: #5ae627;
+    border: 0;
+}
+.botaoVerde:hover {
+    background-color: #44ff00; /* Green */
+    color: white;
+  }
+.botaoVermelho{
+    background-color: #ca1e1e;
+    border: 0;
+}
+.botaoVermelho:hover {
+    background-color: #e71515; /* Green */
+    color: white;
+  }
+.botaoAmarelo{
+    background-color: #daa520;
+    border: 0;
+}
+.botaoAmarelo:hover {
+    background-color: #f4b71d; /* Green */
+    color: white;
+  }
+button{
+    height: 60px;
+    width:85px;
+    border-radius: 10px;
+    border: 0;
+    margin: 5px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.botao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#zeroMaior{
+    width: 195px;
+}
+
+.barra{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    box-shadow: 8px 8px 20px #acacac, -5px -5px 10px white;
+    border-radius: 30px;
+}
+.barra a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #acacac, -5px -5px 10px white;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+.barra a:active{
+    box-shadow: 5px 5px 10px #acacac inset, -5px -5px 10px white inset;
+}
+.barra a:hover{
+    box-shadow: 5px 5px 10px #acacac inset, -5px -5px 10px white inset;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #373735;
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.foto{
+
+}
+.foto img{
+    border-radius: 50%;
+    width: 200px;
+    margin-top: -70px;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.nome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.nome h1{
+    text-shadow: 2px 2px 4px #000000;
+}
+.nome h3{
+    text-shadow: 2px 2px 4px #000000;
+}
+.clube{
+    margin-top: 40px;
+}
+.clube img{
+    width: 230px;
+}
