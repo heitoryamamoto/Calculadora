@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
 </head>
 <script src="main.js"></script>
 <script src="mudarTela.js"></script>
@@ -17,10 +17,26 @@
   <div class="container">
     <div class="card" id="cardLogin">
       <div class="card" id="cardDuplo">
-        
+        <img id="imagemLogin" src="imagem/pagamento.png" alt="" srcset="">
+      </div>
+      <div class="login">
+        <div class="cadastrar">
+          Já possui uma conta?
+          <button onclick="menu()" id="botaoCadastro">Login</button>
+        </div>
+        <h1 id="cadastro">Cadastro</h1>
+        <h4 id="usuario">Email</h4>
+        <input type="text" id="email" placeholder="Email...">
+        <h4 id="usuario">Usuário</h4>
+        <input type="text" id="usuario1" placeholder="Usuário...">
+        <h4 id="senha">Senha</h4>
+        <input type="password" id="senha1" placeholder="Senha...">
+        <br><br>
+        <button id="botaoEntrar" onclick="menuCadastro()">Confirmar</button>
       </div>
     </div>
   </div>
-  
+
 </body>
+
 </html>
