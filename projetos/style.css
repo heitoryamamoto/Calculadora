@@ -335,6 +335,14 @@ button {
     margin-top: 70px;
     text-shadow: 2px 2px 4px #000000;
 }
+#cadastro{
+    font-size:40px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-right: 140px;
+    margin-top: 70px;
+    text-shadow: 2px 2px 4px #000000;
+}
 #usuario{
     margin-top: 30px;
     font-size:12px;
