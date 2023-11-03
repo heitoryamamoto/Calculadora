@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
 </head>
 <script src="mudarTela.js"></script>
+<script src="cadastro.js"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="icon" href="./imagem/casa.png" type="casa.png">
+
 <body>
     <div class="container">
         <div class="card" id="cardLogin">
@@ -24,7 +28,22 @@
                     <h4 id="senha">Senha</h4>
                     <input type="password" id="senha1" placeholder="Senha...">
                     <h4 id="esquecer">Esqueceu a senha?</h4>
-                    <button id="botaoEntrar" onclick="calculadora()">Entrar</button>
+                    <button id="botaoEntrar" title="Atalho enter" onclick="calculadora()">Entrar</button>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="card" id="cardModal">
+                <div class="tituloModal">
+                    <img src="imagem/cuidado.png">
+                    <h1>ERRO</h1>
+                </div>
+                <div class="linha"></div>
+                <div class="mensagemModal">
+                    <span class="fonteGrande">Usuário ou senha incorretos</span>
+                </div>
+                <div class="botaoModal">
+                    <button id="botaoModal" onclick="fecharModal()"><span class="fonteGrande">OK</span></button>
+                </div>
             </div>
         </div>
     </div>

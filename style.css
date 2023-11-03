@@ -305,7 +305,7 @@ button {
 
 .login {
     height: 100%;
-    width:380px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +318,8 @@ button {
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 4px #000000;
 }
-#botaoCadastro{
+
+#botaoCadastro {
     height: 35px;
     width: 100px;
     background-color: #2f4255;
@@ -327,40 +328,45 @@ button {
     font-size: small;
 }
 
-#login{
-    font-size:40px;
+#login {
+    font-size: 40px;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-right: 210px;
     margin-top: 70px;
     text-shadow: 2px 2px 4px #000000;
 }
-#cadastro{
-    font-size:40px;
+
+#cadastro {
+    font-size: 40px;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-right: 140px;
     margin-top: 70px;
     text-shadow: 2px 2px 4px #000000;
 }
-#usuario{
+
+#usuario {
     margin-top: 30px;
-    font-size:12px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-right: 270px;
     text-shadow: 2px 2px 4px #000000;
 }
-#senha{
+
+
+#senha {
     margin-top: 30px;
-    font-size:12px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-right: 270px;
     text-shadow: 2px 2px 4px #000000;
 }
-#esquecer{
-    font-size:11px;
+
+#esquecer {
+    font-size: 11px;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-right: -190px;
@@ -368,7 +374,7 @@ button {
     text-shadow: 2px 2px 4px #000000;
 }
 
-#botaoEntrar{
+#botaoEntrar {
     height: 39px;
     width: 100px;
     background-color: #2f4255;
@@ -377,7 +383,8 @@ button {
     font-size: small;
     margin-right: 215px;
 }
-input{
+
+input {
     border-radius: 10px;
     border: 0;
     height: 30px;
@@ -385,11 +392,86 @@ input{
     margin-right: 10px;
     margin-top: -10px;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px; 
+    font-size: 15px;
     text-indent: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 input:focus {
     outline: none;
-  }
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Use 'fixed' para torná-lo fixo na janela do navegador */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#cardModal{
+    width: 600px;
+    height: 400px;
+}
+.tituloModal{
+    width: 100%;
+    display: flex;
+}
+.tituloModal img{
+    width: 100px;
+    margin-left: 20px
+}
+.tituloModal h1{
+    font-size: xx-large;
+    margin-top: 33px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+.linha{
+    margin: 5px;
+    width: 100%;
+    background-color: white;
+    height: 1.5px;
+}
+.mensagemModal{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.fonteMedia{
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.fonteGrande{
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.botaoModal{
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    
+}
+#botaoModal{
+    height: 50px;
+    width: 140px;
+    background-color: #1ebbd7;
+    border: 1px solid;
+    border-radius: 30px;
+}
+#modal{
+    visibility: hidden;
+}

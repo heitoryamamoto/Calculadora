@@ -1,0 +1,1 @@
+var senha = document.getElementById()

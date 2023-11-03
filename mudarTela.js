@@ -1,5 +1,4 @@
 
-
 window.addEventListener("keydown", andar)
 function andar(teste) {
     var tecla = teste.keyCode
@@ -18,7 +17,7 @@ function andar(teste) {
             window.location.assign("calculadora.html")
         }
         else {
-            alert("usuário ou senha estão incorretos")
+            document.getElementById("modal").style.visibility = 'visible';
         }
 
     }
@@ -43,7 +42,7 @@ function calculadora(params) {
         window.location.assign("calculadora.html")
     }
     else {
-        alert("usuário ou senha estão incorretos")
+        document.getElementById("modal").style.visibility = 'visible';
     }
 
 }
@@ -75,4 +74,7 @@ function menuCadastro(params) {
         window.location.assign("menu.html")
     }
 
+}
+function fecharModal(params) {
+    document.getElementById("modal").style.visibility  = 'hidden';
 }
