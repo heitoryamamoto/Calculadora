@@ -70,11 +70,45 @@ function menuCadastro(params) {
     else if (senha == "") {
         alert("Preencha o campo acima")
     }
-    else{
+    else {
         window.location.assign("menu.html")
     }
 
 }
 function fecharModal(params) {
-    document.getElementById("modal").style.visibility  = 'hidden';
+    document.getElementById("modal").style.visibility = 'hidden';
+}
+function fecharModalNota(params) {
+    document.getElementById("modalNota").style.visibility = 'hidden';
+}
+function fecharModalNotasSalvas(params) {
+    document.getElementById("modalNotasSalvas").style.visibility = 'hidden';
+}
+function abrirModalNotasSalvas(params) {
+    document.getElementById("modalNotasSalvas").style.visibility = 'visible';
+}
+function criarNota(params) {
+    document.getElementById("modalNota").style.visibility = 'visible';
+}
+function salvarNota() {
+    var titulo = "";
+    var texto = "";
+    var botao = "";
+    var notasSalvas = "";
+    titulo = document.getElementById("inpTituloMensagem").value;
+    texto = document.getElementById("areaAnotacao").value;
+    botao = document.createElement("button");
+    botao.className = "botaoNotasSalvas"
+    botao.innerHTML = titulo
+    notasSalvas = document.getElementById("notasSalvas");
+    notasSalvas.appendChild(botao);
+    document.getElementById("titulo").innerHTML = titulo
+    document.getElementById("mensagem").innerHTML = texto
+    botao.addEventListener("click", function () {
+        abrirModalNotasSalvas();
+    });
+    for (var i = 0; i < 2; i++) {
+        document.createElement("div").className = "modal"
+    }
+    fecharModalNota();
 }

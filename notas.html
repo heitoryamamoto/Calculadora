@@ -19,10 +19,47 @@
             </div>
             <div class="linha"></div>
             <div class="espaco">
-                <button id="botaoNota">
+                <button id="botaoNota" onclick="criarNota()">
                     <img src="imagem/adicionar (1).png" alt="">
                     <span class="fonteGrande" style="color: black;">Adicionar Nota</span>
                 </button>
+            </div>
+            <div class="notasSalvas" id="notasSalvas">
+
+            </div>
+        </div>
+        <div class="modal" id="modalNota">
+            <div class="card" id="cardModalNota">
+                <div class="tituloModal">
+                    <img src="imagem/escrevendo.png">
+                    <h1 style="margin-left: 10px;">Notas</h1>
+                </div>
+                <div class="linha"></div>
+                <div class="tituloMensagem">
+                    <span class="fonteGrande">Título: </span>
+                    <input id="inpTituloMensagem" type="text">
+                </div>
+                <div class="anotacao">
+                    <textarea name="" id="areaAnotacao" cols="30" rows="20"></textarea>
+                </div>
+                <div class="botaoModal">
+                    <button id="botaoModal" onclick="salvarNota()"><span class="fonteGrande">Salvar</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalNotasSalvas">
+            <div class="card" id="cardModal">
+                <div class="tituloModal">
+                    <img src="imagem/notas.png">
+                    <h1 id="titulo"></h1>
+                </div>
+                <div class="linha"></div>
+                <div class="mensagemModal">
+                    <span id="mensagem" class="fonteGrande"></span>
+                </div>
+                <div class="botaoModal">
+                    <button id="botaoModal" onclick="fecharModalNotasSalvas()"><span class="fonteGrande">Fechar</span></button>
+                </div>
             </div>
         </div>
     </div>
