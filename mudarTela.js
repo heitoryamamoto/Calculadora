@@ -95,6 +95,7 @@ function salvarNota() {
     var texto = "";
     var botao = "";
     var notasSalvas = "";
+    
     titulo = document.getElementById("inpTituloMensagem").value;
     texto = document.getElementById("areaAnotacao").value;
     botao = document.createElement("button");
@@ -107,8 +108,12 @@ function salvarNota() {
     botao.addEventListener("click", function () {
         abrirModalNotasSalvas();
     });
-    for (var i = 0; i < 2; i++) {
-        document.createElement("div").className = "modal"
-    }
+    
     fecharModalNota();
+}
+function voltar(params) {
+    window.history.back()
+}
+function notas(params) {
+    window.location.assign("notas.html")
 }
