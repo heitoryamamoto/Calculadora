@@ -475,3 +475,13 @@ input:focus {
 #modal{
     visibility: hidden;
 }
+#cardNotas{
+    margin-top: -10px;
+    height: 800px;
+}
+#cardNotas img{
+    width: 100px;
+}
+.titulo{
+    display: flex;
+}
