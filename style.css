@@ -485,3 +485,30 @@ input:focus {
 .titulo{
     display: flex;
 }
+.espaco{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#botaoNota{
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+#botaoNota:hover {
+    background-color: #e4e4e4;
+    color: white;
+}
+#botaoNota img {
+    position: relative;
+    left: -10px;
+    width: 35px;
+    margin-top: 2px;
+}
+#botaoNota span {
+    position: relative;
+    top: -9px;
+    justify-content: center;
+}
